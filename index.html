@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi Negocio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ENCABEZADO -->
+
+    <header>
+
+        <div class="logo">
+            🛒 Mi Negocio
+        </div>
+
+        <button class="carrito" onclick="mostrarCarrito()">
+    🛒 Carrito
+</button>
+
+    </header>
+
+
+    <!-- PRESENTACIÓN -->
+
+    <section class="inicio">
+
+        <h1>
+            Compra fácil y rápido
+        </h1>
+
+        <p>
+            Elige tus productos y realiza tu pedido.
+        </p>
+
+    </section>
+
+
+    <!-- PRODUCTOS -->
+
+    <main>
+
+        <h2>
+            Nuestros productos
+        </h2>
+
+
+        <div class="productos">
+
+
+            <!-- PRODUCTO 1 -->
+
+            <div class="producto">
+
+                <div class="imagen">
+                    🥤
+                </div>
+
+                <h3>
+                    Coca-Cola 500ml
+                </h3>
+
+                <p>
+                    S/ 3.00
+                </p>
+
+                <button onclick="agregarCarrito('Coca-Cola 500ml', 3.00)">
+    Agregar al carrito
+</button>
+
+            </div>
+
+
+            <!-- PRODUCTO 2 -->
+
+            <div class="producto">
+
+                <div class="imagen">
+                    🥤
+                </div>
+
+                <h3>
+                    Inca Kola 500ml
+                </h3>
+
+                <p>
+                    S/ 3.00
+                </p>
+
+                <button onclick="agregarCarrito('Inca Kola 500ml', 3.00)">
+    Agregar al carrito
+</button>
+
+            </div>
+
+
+            <!-- PRODUCTO 3 -->
+
+            <div class="producto">
+
+                <div class="imagen">
+                    💧
+                </div>
+
+                <h3>
+                    Agua 625ml
+                </h3>
+
+                <p>
+                    S/ 2.00
+                </p>
+
+                <button onclick="agregarCarrito('Agua 625ml', 2.00)">
+    Agregar al carrito
+</button>
+
+            </div>
+
+
+        </div>
+
+    </main>
+<div id="ventanaCarrito" class="ventana-carrito">
+
+    <div class="contenido-carrito">
+
+        <button class="cerrar-carrito" onclick="cerrarCarrito()">
+            ✖
+        </button>
+
+        <h2>
+            🛒 Tu carrito
+        </h2>
+
+        <div id="listaCarrito">
+        </div>
+
+        <h3>
+            Total: S/ <span id="totalCarrito">0.00</span>
+        </h3>
+
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>

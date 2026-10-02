@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f5f5f5;
+
+    color: #222;
+
+}
+
+
+/* ENCABEZADO */
+
+header {
+
+    background-color: #ffffff;
+
+    padding: 18px 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+
+}
+
+
+.logo {
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+}
+
+
+.carrito {
+
+    background-color: #111;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 18px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+}
+
+
+/* INICIO */
+
+.inicio {
+
+    background-color: #111;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 70px 20px;
+
+}
+
+
+.inicio h1 {
+
+    font-size: 40px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.inicio p {
+
+    font-size: 18px;
+
+}
+
+
+/* PRODUCTOS */
+
+main {
+
+    padding: 40px 8%;
+
+}
+
+
+main h2 {
+
+    margin-bottom: 25px;
+
+}
+
+
+.productos {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 20px;
+
+}
+
+
+.producto {
+
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+
+    text-align: center;
+
+}
+
+
+.imagen {
+
+    font-size: 70px;
+
+    background-color: #f0f0f0;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+}
+
+
+.producto h3 {
+
+    margin-top: 15px;
+
+}
+
+
+.producto p {
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+}
+
+
+.producto button {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #111;
+
+    color: white;
+
+    cursor: pointer;
+
+}
+
+
+.producto button:hover {
+
+    background-color: #333;
+
+}
+.ventana-carrito {
+
+    display: none;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.6);
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+
+.contenido-carrito {
+
+    background-color: white;
+
+    width: 90%;
+    max-width: 500px;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    position: relative;
+
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+
+}
+
+
+.cerrar-carrito {
+
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    border: none;
+
+    background-color: transparent;
+
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+
+.contenido-carrito h2 {
+
+    margin-top: 0;
+
+}
+
+
+#listaCarrito p {
+
+    padding: 12px;
+
+    border-bottom: 1px solid #ddd;
+
+}
